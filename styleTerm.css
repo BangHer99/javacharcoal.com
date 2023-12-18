@@ -1,0 +1,272 @@
+*, html, body{
+  margin: 0;
+  padding: 0; 
+  font-family:"Roboto", sans-serif;;
+  max-width: 150%;
+  /* overflow-x: hidden; */
+
+}
+header {
+padding: 3px;
+margin-top: -5px;
+text-align: center;
+position: fixed;
+background: #000;
+top: 0;
+left: 0;
+width: 100%;
+z-index: 1000;
+transition: background-color 0.3s ease-in-out;
+box-shadow: 3px 3px 1px 2px #FF9900;
+
+}
+
+header.scrolled {
+background-color: #000;
+box-shadow: 3px 3px 1px 2px #FF9900;
+padding-bottom: 3px;
+padding-top: 3px;
+
+}
+header .hidden-element {
+display: none;
+}
+
+header.scrolled .hidden-element {
+display: block;
+}
+.content {
+margin-top: 100px; /* Make space for the fixed header */
+padding: 20px;
+}
+/* INI REFERENSI BARU */
+
+
+/* .nav{ */
+/* position: fixed;
+background: black;
+height: 102px;
+width: 100%;
+z-index: 999;
+padding-top: 10px; */
+/* box-shadow: 10px 5px 5px 5px #000; */
+
+/* } */
+label.logo{
+color: white;
+/* font-size: 30px; */
+line-height: 80px;
+/* padding: 0 10px; */
+font-weight: bold;
+}
+.logo img{
+float: left;
+margin-left: 20px;
+width: 150px;
+padding-top: 20px;
+}
+.nav ul{
+float: right;
+margin-right: 80px;
+}
+.nav ul li{
+display: inline-block;
+line-height: 95px;
+/* margin: 0 5px; */
+}
+.nav ul li a{
+  /* color: #FF9900; */
+  background: linear-gradient(to left, #F9851F, #fff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 18px;
+  padding: 5px 10px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.nav ul li a:hover{
+background: #FF9900;
+transition: .5s;
+color: #000;
+}
+
+.checkbtn{
+font-size: 30px;
+color: white;
+float: right;
+line-height: 80px;
+margin-right: 40px;
+cursor: pointer;
+display: none;
+}
+#check{
+display: none;
+}
+
+a:hover,a.active{
+background: none;
+color: #0082e6;
+transition: .5s;
+
+}
+.nav ul li a:hover{
+  background: #FF9900;
+  transition: .5s;
+}
+
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  .nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 929px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  .nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  .nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+
+
+.termServ h1{
+text-align: center;
+display: flex;
+/* border: 1px solid #000; */
+padding-top: 150px;
+padding-left: 30%;
+padding-right: 30%;
+padding-bottom: 50px;
+justify-content: center;
+align-items: center;
+font-size: 40px;;
+margin-bottom: 20px;
+/* font-family: 'montserrat'; */  
+}
+.termServ {
+background-color: #EDEDED;
+background: url(Baground-Produk.png);
+background-size: cover;
+/* padding: 100px; */
+padding-bottom: 30px;
+
+}
+.termServ p {
+width: 50%;
+padding-left: 100px ;
+}
+
+.termServ h3 {
+width: 50%;
+padding-left: 100px ;
+padding-top: 20px;
+font-size: 18px;
+}
+.ter h4{
+padding-top: 10px;
+padding-left: 100px;
+font-size: 18px;
+
+
+}
+.ter p {
+width: 50%;
+padding-left: 120px ;
+/* padding-top: 5px; */
+}
+
+.tc {
+text-align: center;
+/* background-color: #EDEDED; */
+/* padding-bottom: 4cm; */
+padding-top: 100px;
+/* margin-bottom: 100px; */
+padding-bottom: 100px;
+
+}
+
+.tc > a {
+font-family: sans-serif;
+font-size: 15px;
+background: #F2BD00;
+color: #000;
+border: black 3px solid;
+border-radius: 5px;
+padding: 12px 20px;
+text-decoration: none;
+margin-top: 10px;
+}
+
+
+
+@media (max-width: 1100px){
+.checkbtn{
+  display: block;
+}
+ul{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: #2c3e50;
+  top: 80px;
+  left: -100%;
+  text-align: center;
+  transition: all .5s;
+}
+.nav ul li{
+  display: block;
+  margin: 50px 0;
+  line-height: 30px;
+}
+.nav ul li a{
+  font-size: 20px;
+}
+a:hover,a.active{
+  background: none;
+  color: #0082e6;
+}
+#check:checked ~ ul{
+  left: 0;
+}
+}
